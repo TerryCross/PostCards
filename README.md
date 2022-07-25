@@ -22,4 +22,4 @@ Your browser will open to a page
 that will only become live when the server is up.
 
 The trial app has preset user Ids, so try to submit
-with email address Sincere@april.biz.
+with email address eg, Sincere@april.biz.
