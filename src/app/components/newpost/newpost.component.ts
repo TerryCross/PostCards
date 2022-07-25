@@ -18,6 +18,11 @@ export class NewpostComponent implements OnInit {
     constructor(private uicoordService: UicoordService) {
         this.subscription = this.uicoordService
             .onNewPostClick().subscribe( (showing) => this.showNewPostForm = showing)
+        this.uicoordService.onNewLogin().subscribe( userid => {
+            console.log("newpost, onNewLogin:", userid);
+            return this.userId = userid;
+        })
+        this.userId = this.uicoordService.getUserId()
     }
     
     ngOnInit(): void {  }
@@ -26,7 +31,7 @@ export class NewpostComponent implements OnInit {
     
     onSubmitPost() {
         if(this.postTitle === "" || this.postBody === ""){
-            alert("Please add both a title and test for your new post.")
+            alert("Please add both a title and a text message for your new post.")
             return;
         }
         const postobj = { userId: this.userId , title: this.postTitle, body: this.postBody };

@@ -57,7 +57,7 @@ export class TabsComponent implements OnInit {
         return this.subject.asObservable()
     }
     newPostEvent(p: Post) {
-        console.log("Ev:",p)
+        console.log("Ev:",p, "this.userId", this.userId)
         if(p.userId === this.userId)
             this.usersposts.unshift(p);
         else
