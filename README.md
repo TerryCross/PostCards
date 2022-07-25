@@ -8,9 +8,9 @@ Note, the '$' below represents the command line prompt of a terminal.
 
 #### Install with:
 
-     $ git clone https://github.com/TerryCross/PostCards
+     $ git clone https://github.com/TerryCross/PostCards  
 
-In a terminal run:
+Then run:
 
      $ npm install  
      $ npm start

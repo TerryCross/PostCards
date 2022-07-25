@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "concurrently \"opener http://localhost:4200/\" \"ng serve\"",
+    "start": "concurrently  'ng serve' 'sleep 3 && opener http://localhost:4200/'",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
