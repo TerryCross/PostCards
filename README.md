@@ -8,10 +8,11 @@ Note, the '$' below represents the command line prompt of a terminal.
 
 #### Install with:
 
-     $ git clone https://github.com/TerryCross/PostCards  
+     $ git clone https://github.com/TerryCross/PostCards
 
 Then run:
 
+     $ cd PostCards
      $ npm install  
      $ npm start
 
