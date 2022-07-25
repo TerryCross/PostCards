@@ -11,9 +11,10 @@ Install with:
    $ git clone https://github.com/TerryCross/PostCards
 
 In a terminal run:
-   
-   $ npm install
-   $ npm start
+
+     $ npm install  
+     $ npm start
+
 
 This starts a server and a browser.
 Your browser will open to a page
