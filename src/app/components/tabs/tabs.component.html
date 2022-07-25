@@ -1,0 +1,27 @@
+
+<button id="newPostBtn" (click)="onMakeNewPostClick()"
+        class="btn btn-sm"
+        [ngClass]='{"btn-warning": !btnchange, "btn-success": btnchange}'
+>
+  {{!btnchange ? "New Post" : "&nbsp;".repeat(3) + "Close" + "&nbsp;".repeat(3) }}
+</button>
+
+<app-newpost (postsChange)="newPostEvent($event)">
+             </app-newpost>
+
+
+<div class="tabs">
+  <button class="btn btn-dark" autofocus (click)="tabn='first'">User's posts</button>
+  <button class="btn btn-dark" (click)="tabn='second'">Other Posts</button>
+</div>
+
+<div *ngIf="tabn === 'first'">
+  <app-apost *ngFor="let post of usersposts" [post]="post">
+  </app-apost>
+</div>
+
+<div *ngIf="tabn === 'second'">
+  <app-apost *ngFor="let post of othersposts" [post]="post">
+  </app-apost>
+</div>
+

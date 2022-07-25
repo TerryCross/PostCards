@@ -1,0 +1,15 @@
+.tabs > .btn {
+    --bs-btn-border-radius: 5px;
+    border-top-right-radius: 15px;
+    margin-left: 5px
+}
+
+#newPostBtn {
+    margin-bottom: 10px;
+    float: right;
+    margin-top: -11%;
+    margin-right: 15px
+}
+h5 {
+    font-weight: bold;
+}

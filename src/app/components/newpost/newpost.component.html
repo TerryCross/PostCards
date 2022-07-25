@@ -1,0 +1,17 @@
+
+<form *ngIf="showNewPostForm" (ngSubmit)="onSubmitPost()">
+  <div class="form-group">
+    <label for="text">Enter title of new post</label>
+    <input  class="form-control" type="text"
+            name="postTitle" [(ngModel)]="postTitle" placeholder="Title of Post" />
+  </div>
+
+  <div class="form-group">
+    <label for="text">Enter text of new Post</label>
+    <textarea type="text" name="postBody" class="form-control" [(ngModel)]="postBody"
+              placeholder="Enter new post">
+    </textarea>
+  </div>
+  <button type="submit" id="savePost" class="btn btn-primary">Save post</button>
+</form>
+

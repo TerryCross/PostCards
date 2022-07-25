@@ -1,0 +1,17 @@
+<div *ngIf="showself" class="container">
+  <app-header bgcolor="aliceblue" title="PostCards">
+  </app-header>
+
+<form (ngSubmit)="onSubmitUserEmail()">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" name="emailAddress"
+           [(ngModel)]="emailAddress" class="form-control"
+           id="exampleInputEmail1" aria-describedby="emailHelp"
+           placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">Please enter a valid email address.</small>
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
