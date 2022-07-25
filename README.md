@@ -1,14 +1,14 @@
 # Postcards
 
-#Prerequisites:
+#### Prerequisites:
 
 An installation of git, node and npm.
 
 Note, the '$' below represents the command line prompt of a terminal.
 
-Install with:
+#### Install with:
 
-   $ git clone https://github.com/TerryCross/PostCards
+     $ git clone https://github.com/TerryCross/PostCards
 
 In a terminal run:
 
